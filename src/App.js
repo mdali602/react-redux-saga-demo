@@ -1,8 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Button from './containers/Button';
+import Loading from './containers/Loading';
+import NewsItem from './containers/NewsItem';
+// import logo from './logo.svg';
+// import './App.css';
 
-function App() {
+/* function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -21,6 +24,13 @@ function App() {
       </header>
     </div>
   );
-}
+} */
 
+const App = () => (
+  <div>
+    <Button />
+    <Loading />
+    <NewsItem />
+  </div>
+);
 export default App;
